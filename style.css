@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&family=Shizuru&family=Staatliches&display=swap');
+
+body{
+    background-image: url('./images/cb\ back\ 1.jpeg');
+    
+}
+
+.titleBack{
+    margin-left: 25%;
+    width: 600px;
+    height: 90px;
+    background-image: linear-gradient(to left, transparent,#C81717, #AF1414,darkgray, #383434,darkgray,#AF1414, #C81717, transparent);
+    z-index: -1;
+    
+}
+.title{
+    text-align: center;
+    font-family: 'Staatliches';
+    font-size: 6rem;
+    letter-spacing: 5px;
+    margin-top: -13%;
+    padding-top: 4%;
+    background-image: url('./images/bat\ 1.png');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+#incorrect{
+    font-family: 'Staatliches';
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    position: relative;
+    float: right;
+    margin-right: 8%;
+    margin-top: -10%;
+    text-shadow: 0 0 10px red;
+    color: white;
+}
+#correct{
+    font-family: 'Staatliches';
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-left: 5%;
+    margin-top: -4%;
+    text-shadow: 0 0 10px red;
+    color: white;
+}
+.movieBox{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -5%;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2.5rem;
+    
+}
+
+.movieModal{
+    width: 230px;
+    height: 100px;
+    background: #C81717;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Staatliches';
+    box-shadow: 5px 5px;
+ }
+  
+ .modOne{
+     
+    animation: bubble 2s infinite alternate;
+ }
+  @keyframes bubble{
+      from{
+          transform: translateX(0px);
+      }
+      to{
+          transform: translateX(25px)
+      }
+  }
+  .modTwo{
+    animation: bubbleTwo 2s infinite alternate;
+  }
+  @keyframes bubbleTwo{
+    from{
+        transform: translateX(25px);
+    }
+    to{
+        transform: translateX(0px)
+    }
+}
+ .movieModal:before{
+     content: "";
+     position: absolute;
+     right: 100%;
+     top: 26px;
+     width: 0;
+     height: 0;
+     border-top: 13px solid transparent;
+     border-right: 26px solid #C81717;
+     border-bottom: 13px solid transparent;
+     
+     
+ }
+ 
+.modal{
+    background-image: url('./images/cb\ 3.jpeg');
+    height: 250px;
+    width:600px;
+    border-radius: 40%;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 25%;
+    z-index: 3;
+    text-align: center;
+    font-family: 'Staatliches';
+    font-size: 70%;
+    
+}
+.show-modal{
+    opacity: 1;
+    display: block; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px;
+}
+
+#modal-textbox{
+    width: 400px;   
+}
+.quote{
+    background-color: white;
+    border-radius: 10%;
+}
+.answer{
+    width: 250px;
+    height: 40px;
+    font-family: 'Staatliches';
+    font-size: 70%;
+    letter-spacing: 3px;
+    border: 2px solid #C81717;
+    border-radius: 50%;
+    padding-left: 30px;
+    outline: none;
+    align-items: center;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: black;
+    margin-left: 20px;
+   
+}
+
+.class{
+    position: absolute;
+    float: bottom;
+}
