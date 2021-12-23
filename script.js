@@ -95,7 +95,7 @@ function quoteInput(indexOfAnswer, nameInput){
         modals[indexOfAnswer].style.display = 'none'
     }else {
         
-        alert("Incorrect!")
+        alert("Incorrect!\nCorrect answer is: " + nameInput)
         document.querySelector('#incorrect').innerText = "Incorrect: " + ++incorrect
         modals[indexOfAnswer].style.display = 'none'
         }
@@ -108,10 +108,10 @@ function quoteInput(indexOfAnswer, nameInput){
 
 openBtn.addEventListener('click', openModal)
 close.addEventListener('click', closeModal)*/
-swEnter.addEventListener('click', quoteInput.bind(null, 0, "yoda"))
+swEnter.addEventListener('click', quoteInput.bind(null, 0, "obi wan"))
 transformEnter.addEventListener('click', quoteInput.bind(null, 1, "megatron"))
 batOneEnter.addEventListener('click', quoteInput.bind(null, 2, "bane"))
-spidermanEnter.addEventListener('click', quoteInput.bind(null, 3, "green goblin"))
+spidermanEnter.addEventListener('click', quoteInput.bind(null, 3, "uncle ben"))
 stEnter.addEventListener('click', quoteInput.bind(null, 4, "james t kirk"))
 bmTwoEnter.addEventListener('click', quoteInput.bind(null, 5, "harvey dent"))
 avOneEnter.addEventListener('click', quoteInput.bind(null, 6, "thanos"))
